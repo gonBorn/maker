@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/maker?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  mvc:
+    static-path-pattern: /static/**
+
+server:
+  context-path: /maker
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+wechat:
+  mpAppId: wx761df67f856ebc45
+  mpAppSecret: 1677c2dff1dc0271f9733737e586bde9
+

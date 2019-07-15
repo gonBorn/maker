@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ApproveOrNot</title>
+
+<!--日历样式-->
+<link rel="stylesheet" href="../../css/calendar.css">
+
+<script src="../../script/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/iconfont.css">
+<script src="../../script/iconfont.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/insApprove.css">
+	<script src="../../script/insApprove.js"></script>
+</head>
+
+<body>
+<!-- <svg class="icon" aria-hidden="true">
+	<use xlink:href="#icon-fanhui"></use>
+</svg> -->
+<div class="header">
+	<div class="title">审批课程</div>
+</div>
+<ul class="content">
+	<li>
+		<div class="school-time">
+			<div class="schoolName">师大附小</div>
+			<div class="line"></div>
+			<div class="courseName">动力机械</div>
+			<div class="create">2019-01-01 00:00:00</div>
+		</div>
+		<div class="time-border">
+			<div class="border">最早开课时间</div>
+			<div class="create">2019-01-01</div>
+			<div class="border">最晚开课时间</div>
+			<div class="create">2019-01-01</div>
+		</div>
+		<div class="app-status">
+			<div>审核中</div>
+		</div>
+	</li>
+</ul>
+
+<div class="row" id="time">
+	<span>开课时间：<span style="color: red"></span></span>
+	<input type="text" class="room"  placeholder="点击选择开课">
+</div>
+<span class="attention">*&nbsp注意开课时间应位于学校申请的开课时间区间内</span>
+<div class="row" id="teacher">
+	<span>选择教师：</span>
+	<select>
+		<option>张三</option>
+		<option>李四</option>
+	</select>
+</div>
+<div class="row" id="address">
+	<span>上课地点：<span style="color: red"></span></span>
+	<input type="text" placeholder="请填写上课地点">
+</div>
+<div class="footer">
+	<div class="footer-btn">
+		通过
+	</div>
+	<div class="footer-btn">
+		拒绝
+	</div>
+</div>
+
+
+<!--日期日历插件-->
+<script src="../../script/calendar.js"></script>
+
+<!--方法调用-->
+<script>
+$('.room').datePicker({
+	okFunc: function (date) {
+		console.log(date);
+	}
+});
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <link href="../css/H-ui.css" rel="stylesheet" type="text/css" />
+  <link href="../css/H-ui.ucenter.css" rel="stylesheet" type="text/css" />
+  <script src="../script/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../script/H-ui.js"></script>
+  <script type="text/javascript" src="../script/jquery.validation/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="../script/jquery.validation/validate-methods.js"></script>
+  <script type="text/javascript" src="../script/jquery.validation/messages_zh.min.js"></script>
+  <script type="text/javascript" src="../script/login.js"></script>
+  <title>Login</title>
+</head>
+<body>
+<div class="login-wraper">
+  <div class="login-form radius box-shadow">
+    <div class="clearfix pt-20">
+      <i class="iconpic iconpic-logo"></i>
+    </div>
+    <div class="row clearfix form-title">Maker Education</div>
+    <form class="form form-horizontal" id="form-login">
+      <div class="row clearfix">
+        <button class="role-btn focus-btn" id="institution">机构</button>
+        <button class="role-btn" id="school">学校</button>
+        <button class="role-btn" id="student">学生</button>
+        <button class="role-btn" id="teacher">教师</button>
+      </div>
+      <div class="row clearfix">
+        <input type="text" class="input-text radius size-L" name="usrId" id="usrId" value="" placeholder="userId">
+      </div>
+      <div class="row clearfix">
+        <input type="password" class="input-text radius size-L" name="password" id="password" value="" placeholder="password">
+      </div>
+      <div class="row clearfix">
+        <button class="btn btn-primary btn-block radius size-L">登 录</button>
+      </div>
+      <div class="row clearfix f-12">
+        <a href="/password/reset/">忘记密码?</a>
+        <div class="line mt-20"></div>
+      </div>
+
+      <div class="row clearfix">没有账户? <a href="reg.html"><strong>注 册</strong></a></div>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    $("#form-login").validate({
+      rules: {
+        usrId: {
+          required: true,
+        },
+        password: {
+          required: true,
+          rangelength: [6, 16]
+        },
+      },
+      messages: {
+        usrId: {
+          required: "用户编号不能为空",
+        },
+        password: {
+          required: "密码不能为空",
+          rangelength: "6-16个字符"
+        }
+      },
+      onkeyup: false,
+      focusCleanup: false,
+      submitHandler: function(form) {
+        $(".label.error").hide();
+        //在这里执行表单提交
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+<!--H-ui前端框架提供前端技术支持 h-ui.net @2019-02-27 -->

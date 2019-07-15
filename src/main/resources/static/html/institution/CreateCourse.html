@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CreateCourse</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="../../script/createCourse.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header"><h1>创建课程</h1></div>
+	  	<div data-role="main" class="ui-content">
+	    <form method="post" action="demoform.php">
+	      	<label for="fname">请输入课程名：</label>
+	      	<input type="text" name="fname" id="fname">
+	      	<label for="lessontime">请输入总课时数：</label>
+	      	<input type="text" name="lessontime" id="lessontime" placeholder="请输入数字">
+	      	<fieldset data-role="fieldcontain">
+        		<label for="kind">请选择课程类别：</label>
+        		<select name="kind" id="courseId" data-native-menu="false">
+			        <option value="phy">物理</option>
+			        <option value="art">艺术</option>
+			        <option value="lit">英语</option>
+			        <option value="che">文学</option>
+			        <option value="oth">计算机</option>
+		        </select>
+		    </fieldset>
+		    <fieldset data-role="fieldcontain">
+        		<label for="crowd">请选择面向人群：</label>
+        		<select name="crowd" id="crowdId" data-native-menu="false">
+			        <option value="pri1">小学1-3</option>
+			        <option value="pri2">小学4-6</option>
+			        <option value="jun">初中</option>
+			        <option value="sen">高中</option>
+			        <option value="other">其他</option>
+		        </select>
+		    </fieldset>
+		    <label for="details">请输入课程描述：</label>
+		    <input type="text" name="details" id="details">
+		   <!--  <label for="image">可选择图片上传：</label>
+		    <input type="file" id="image" accept="image/png, image/jpeg, image/gif, image/jpg">
+			<ul data-role="listview" data-inset="true">
+		      <li data-role="divider">填写课程大纲</li>
+		      <li>
+		        <a href="#">
+		        <img src="/try/demo_source/chrome.png">
+		        <h2>Google Chrome</h2>
+		        <p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+		        </a>
+		        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+		      </li>
+		      <li>
+		        <a href="#">
+		        <img src="/try/demo_source/firefox.png">
+		        <h2>Mozilla Firefox</h2>
+		        <p>Firefox 是来自 Mozilla 的 web 浏览器。发布于 2004 年。</p>
+		        </a>
+		        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+		      </li>
+		    </ul>
+	      	<div data-demo-html="true">
+				<fieldset class="ui-grid-a">
+					<div class="ui-block-a">
+						<input type="submit" value="提交" data-theme="a">
+					</div>
+					<div class="ui-block-b">
+						<input type="reset" value="重置" data-theme="b">
+					</div>
+				</fieldset>
+			</div> -->
+	    </form>
+	    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-state-persist" >提交</a>
+	  </div>
+			
+	  
+	</div>
+</body>
+</html>

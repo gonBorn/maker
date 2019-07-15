@@ -1,0 +1,120 @@
+body {
+	background-color: #F8F8F8;
+}
+.header{
+	background-color: #1e89e0;
+	height: 60px;
+	position: fixed;
+	color: white;
+	width: 100%;
+	top: 0;
+}
+.title{
+	width: 80px;
+	font-size: 20px;
+	margin:0 auto;
+	line-height: 60px;
+}
+
+.content {
+	margin: 0 10px 0 10px;
+	position: relative;
+	top: 70px;
+	font-size: 13px;
+}
+
+li {
+/*	border: 1px solid #fff;*/
+	box-shadow: 2px 2px 1px #E8E8E8;
+	display: flex;
+	background-color: #fff;
+	margin-bottom: 7px;
+}
+.school-time {
+	margin-top: 15px;
+	flex: 2;
+	margin-left: 20px;
+}
+.schoolName {
+	margin: 2px 0 8px 0;
+	height: 16px;
+	font-size: 16px;
+	color: #1e89e0;
+}
+.courseName {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+/*.line {
+	width:90%;
+	height: 0px;
+	border: 1px solid #93999F;
+}*/
+.create {
+	margin-bottom: 8px;
+	line-height: 10px;
+	font-size: 10px;
+	color: #93999F;
+}
+.time-border {
+	margin-top: 15px;
+	flex: 2;
+	text-align: center;
+}
+.border {
+	margin-bottom: 5px;
+}
+.app-status {
+	flex: 1;
+	font-size: 20px;
+	color: #FF5B65;
+	margin-top: 30px;
+}
+.app-status-fail {
+	color: #BBBBBB;
+}
+.period {
+	margin-top: 15px;
+	font-size: 24px;
+	margin-right: 10px;
+}
+.current {
+	color: pink;
+}
+.divide {
+	color: #93999F;
+}
+.total {
+	color: #1e89e0;
+}
+.weekday {
+	font-size: 20px;
+	color: #1e89e0;
+	margin-top: 10px;
+}
+.tea {
+	font-size: 14px;
+	color: #1e89e0;
+	line-height: 20px;
+	margin-top: 18px;
+	flex: 3;
+	margin-left: 10px;
+}
+.tea-item>span {
+	color: #393939;
+}
+.end {
+	line-height: 12px;
+}
+.tip {
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	color: #707070;
+	position: relative;
+	text-align:center;
+	top: 70px;
+	box-shadow: 2px 2px 1px #E8E8E8;
+	background-color: #fff;
+	margin: 0 10px 8px 10px;
+}

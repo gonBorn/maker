@@ -1,0 +1,85 @@
+.content {
+	display:  flex;
+	position: absolute;
+	top:  60px;
+	bottom: 50px;
+	/*width=device-width;*/
+	overflow: hidden;
+}
+.menu-wrapper {
+	flex:0 0 80px;
+	width: 80px;
+	background: #faf5f7
+}
+.menu-item {
+	display: table;
+	/*无论一行还是两行都能垂直居中的布局*/
+	height: 54px;
+	width: 56px;
+	line-height: 54px;	
+	text-align: center;
+	padding: 0 12px;
+}
+.text {
+	display: table-cell;
+	width: 56px;
+	vertical-align: middle;
+	font-size: 14px;
+	border-bottom: 1px solid #EBEBEB;
+}
+/*左侧固定，右侧自适应*/
+
+.course-wrapper {
+/*	flex: 1;*/
+}
+.course-item {
+	display: flex;
+	margin: 18px;
+	border-bottom: 1px solid #EBEBEB;
+	padding-bottom: 10px;
+}
+.icon {
+	flex: 0 0 57px;
+	margin-right: 10px;
+}
+.icon> img {
+	width: 57px;
+	height: 57px;
+}
+.course-info {
+	width: 80px;
+	margin-right: 10px;
+}
+.courseName {
+	margin: 2px 0 8px 0;
+	height: 14px;
+	line-height: 14px;
+	font-size: 16px;
+	color: #07111B;
+}
+.otherInfo {
+	margin-bottom: 8px;
+	font-size: 10px;
+	color: #93999F;
+}
+.period {
+	flex: 1;
+	font-size: 24px;
+}
+.current {
+	color: pink;
+}
+.divide {
+	color: #93999F;
+}
+.total {
+	color: #1e89e0;
+}
+.weekday {
+	font-size: 20px;
+	color: #1e89e0;
+	margin-top: 10px;
+}
+.leftFocus {
+	background-color: white;
+}

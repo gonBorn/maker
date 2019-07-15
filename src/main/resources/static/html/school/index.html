@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>SchoolSubmitApplication</title>
+
+<!--日历样式-->
+<link rel="stylesheet" href="../../css/calendar.css">
+<link rel="stylesheet" href="../../css/SchoolApplication.css">
+<script src="../../script/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/iconfont.css">
+<script src="../../script/iconfont.js"></script>
+	<script src="../../script/addCourse.js"></script>
+
+</head>
+
+<body>
+<svg class="icon" aria-hidden="true">
+	<use xlink:href="#icon-fanhui"></use>
+</svg>
+<div class="header">
+	<div class="title">学校教务</div>
+</div>
+<div class="row" id="left">
+	<span>最早开始时间：<span style="color: red">*&nbsp</span></span>
+	<input type="text" class="room" id="startTime" placeholder="点击选择最早开始时间">
+</div>
+
+<div class="row" id="right">
+	<span>最晚开始时间：<span style="color: red">*&nbsp</span></span>
+	<input type="text" class="room" id="endTime" placeholder="点击选择最晚开始时间">
+</div>
+
+<div class="row" id="other">
+	<span>其他要求：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+	<input type="text" id="otherRequest">
+</div>
+<div class="footer">
+		<div class="footer-btn">
+			提交
+		</div>
+
+	<div class="footer-btn">
+		取消
+	</div>
+</div>
+
+
+<!--日期日历插件-->
+<script src="../../script/calendar.js"></script>
+
+<!--方法调用-->
+<script>
+$('.room').datePicker({
+	okFunc: function (date) {
+		console.log(date);
+	}
+});
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>

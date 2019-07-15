@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ManagerIndex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="../../script/courseList.js"></script>
+	<style>
+		.icon {
+	       width: 1em; height: 1em;
+	       vertical-align: -0.15em;
+	       fill: currentColor;
+	       overflow: hidden;
+	    }
+		.ui-li-has-thumb>img:first-child, .ui-listview .ui-li-has-thumb>.ui-btn>img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb {
+		    /*position: absolute;
+		    left: 0;
+		    top: 0;
+		    max-height: 6em;
+		    max-width: 6em;*/
+		}
+	</style>
+</head>
+<body>
+	<div data-role="page" class="jqm-demos" data-quicklinks="true" id="mainpage">
+		<div data-role="panel" id="revealPanel" data-display="reveal"> 
+	    	<h2>报名学校</h2>
+	    	<ul data-role="listview" style="margin-bottom: 10px">
+		        <li data-role="list-divider">
+		          交大附小
+		          <span><b>36</b>人</span>
+		          <span style="float: right;">展开</span>
+		        </li>
+			    <li data-role="list-divider">
+		        师大附小
+			        <span><b>36</b>人</span>
+			        <span style="float: right;">合起</span>
+			    </li>
+			    <li><a href="#detail">张三</a></li>
+			    <li><a href="#detail">李四</a></li>
+		        <li><a href="#detail">张三</a></li>
+		        <li><a href="#detail">李四</a></li> 
+		        <li><a href="#detail">张三</a></li>
+			    <li><a href="#detail">李四</a></li>
+		        <li><a href="#detail">张三</a></li>
+		        <li><a href="#detail">李四</a></li> 
+		        <li><a href="#detail">李四</a></li>   
+
+			</ul>
+	    	<a href="#mainpage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">关闭面板</a>
+  		</div>
+	    <div data-role="header">
+	        <h3>机构教务员</h3>
+	        <a href="#id-popupmenu-main" data-rel="popup" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a ui-btn-icon-notext"></a>
+	        <div data-role="popup" id="id-popupmenu-main" data-theme="a">
+	            <ul data-role="listview" data-inset="true" style="min-width:128px;">
+	                <li><a id="id-a-load" data-ajax="false">Load</a></li>
+	                <li><a id="id-a-refresh" data-ajax="false">Refresh</a></li>
+	                <li><a id="id-a-clear" data-ajax="false">Clear</a></li>
+	                <li><a id="id-a-setting" data-ajax="false">Setting</a></li>
+	                <li><a id="id-a-about" data-ajax="false">About</a></li>
+	            </ul>
+	        </div>
+	        <a href="#id-popupmenu-user" id="id-a-user" data-rel="popup" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-user ui-btn-icon-left ui-btn-a"></a>
+	        <div data-role="popup" id="id-popupmenu-user" data-theme="a">
+	            <ul data-role="listview" data-inset="true" style="min-width:128px;">
+	                <li><a id="id-a-userinfo" data-ajax="false">User Info</a></li>
+	                <li><a id="id-a-logout" data-ajax="false">Logout</a></li>
+	            </ul>
+	        </div>
+	    </div><!-- /header -->
+	    <div class="ui-content jqm-content" role="main">
+	        <div data-demo-html="true" id="id-lv">
+	            <ul data-role="listview" data-filter="true" data-filter-placeholder="Search ..." data-inset="true">
+	            </ul>
+	        </div>
+	        <h2>课程列表</h2>
+		    <ul data-role="listview" data-inset="true">
+		      <li>
+		        <a href="#revealPanel">
+		        <h2>动力机械</h2>
+		        <p>乐高设计与技术活动包含动力机械、结构与力、能源基础三大部分。各部分又按照探索、研究、解
+				决问题来划分级别。孩子们在活动中循序渐进地理解相关知识，并能够将这些知识与现实生活联系在一
+				起。</p>
+				<p>
+
+					<b>热度：</b>&nbsp<span>233</span>人
+					&nbsp&nbsp
+
+					<b>学校：</b>&nbsp<span>23</span>所
+					&nbsp&nbsp
+
+					<b>类别：</b>&nbsp&nbsp<span>物理</span>
+				</p>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#">
+		        <h2>英语演讲</h2>
+		        <p>乐高设计与技术活动包含动力机械、结构与力、能源基础三大部分。各部分又按照探索、研究、解
+				决问题来划分级别。孩子们在活动中循序渐进地理解相关知识，并能够将这些知识与现实生活联系在一
+				起。</p>
+				<p>
+
+					<b>热度：</b>&nbsp&nbsp<span>233</span>人
+					&nbsp&nbsp
+
+					<b>学校：</b>&nbsp&nbsp<span>23</span>所
+					&nbsp&nbsp
+
+					<b>类别：</b>&nbsp&nbsp<span>英语</span>
+				</p>
+		        </a>
+		      </li>
+		    </ul>
+	    </div>
+	    <div data-role="footer" data-position="fixed">
+	        <div data-role="navbar">
+	            <ul>
+	                <li><a href="CreateCourse.html" class="ui-btn-active ui-state-persist" data-ajax="false">新建 | New</a></li>
+	                <li><a href="insApplication.html" data-ajax="false">查看申请</a></li>
+	            </ul>
+	        </div>
+	        <h4 style="display:none;">Footer</h4>
+	    </div>
+	</div>
+</body>
+</html>

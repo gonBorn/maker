@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../../css/iconfont.css">
+  <script src="../../script/iconfont.js"></script>
+    <script src="../../script/teacherEva.js"></script>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+      position: relative;
+      top: 17px;
+      left: 20px;
+      z-index: 999;
+      color: white;
+    }
+    .header{
+      background-color: #1e89e0;
+      position: fixed;
+      color: white;
+      width: 100%;
+      top: 0;
+    }
+    .header>i{
+      color: white;
+      float:left;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 50px;
+      margin-left: 5px;
+    }
+    .title{
+      width: 80px;
+      font-size: 20px;
+      margin:0 auto;
+      line-height: 50px;
+    }
+    .login{
+      float: right;
+      margin:10px 10px;
+      color:white;
+      font-size: 12px;
+    }
+    .login>div{
+      float: right;
+      margin-left: 5px;
+    }
+    .other{
+      height: 30px;
+    }
+    .subtext{
+      font-size:18px;
+      list-style-type: square;
+    }
+  </style>
+</head>
+<body>
+<!--<div data-role="page" id="home" data-theme='a'>-->
+<!--  <svg class="icon" aria-hidden="true">-->
+<!--    <use xlink:href="#icon-fanhui"></use>-->
+<!--  </svg>-->
+<!--  <div class="header">-->
+<!--    <li class="title">动力机械</li>-->
+<!--  </div>-->
+<!--  <div class="other"></div>-->
+<!--	<div data-role="header">-->
+<!--		<div data-role="navbar">-->
+<!--			<ul>-->
+<!--				<li><a href="#anylink">未完成评价</a></li>-->
+<!--				<li><a href="#anylink">已完成评价</a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	  <div data-role="main" class="ui-content">-->
+<!--	    <ul data-role="listview">-->
+<!--        <li data-role="list-divider">-->
+<!--          交大附小-->
+<!--          <span><b>36</b>人</span>-->
+<!--          <span style="float: right;">展开</span>-->
+<!--        </li>-->
+<!--	      <li data-role="list-divider">-->
+<!--        师大附小-->
+<!--        <span><b>36</b>人</span>-->
+<!--        <span style="float: right;">合起</span>-->
+<!--        </li>-->
+<!--	      <li><a href="#detail">张三</a></li>-->
+<!--	      <li><a href="#detail">李四</a></li>-->
+<!--        <li><a href="#detail">张三</a></li>-->
+<!--        <li><a href="#detail">李四</a></li>-->
+<!--        <li><a href="#detail">张三</a></li>-->
+<!--        <li><a href="#detail">李四</a></li>-->
+<!--        <li><a href="#detail">张三</a></li>-->
+<!--        <li><a href="#detail">李四</a></li>-->
+<!--	      -->
+<!--	    </ul>-->
+<!--	  </div>-->
+<!--  </div>-->
+  <div id="detail" data-role="page">
+    <div data-role="header" data-add-back-btn="true"><h1>李四</h1></div>
+    <div data-role="main" class="ui-content"> 
+      <form>
+          <div data-demo-html="true">
+          <fieldset data-role="controlgroup" data-type="horizontal" data-inline="true" >
+
+                <legend>Practical 实践：</legend>
+                <label for="1a">5</label>
+                <input type="radio" name="q1" id="1a" value="5">
+                <label for="1b">4</label>
+                <input type="radio" name="q1" id="1b" value="4"> 
+                <label for="1c">3</label>
+                <input type="radio" name="q1" id="1c" value="3">
+                <label for="1d">2</label>
+                <input type="radio" name="q1" id="1d" value="2">
+                <label for="1e">1</label>
+                <input type="radio" name="q1" id="1e" value="1">
+            </fieldset>
+            <div></div>
+          </div>
+            <div data-demo-html="true">
+          <fieldset data-role="controlgroup" data-type="horizontal" data-inline="true">
+                <legend>Positive 积极：</legend>
+                <label for="2a">5</label>
+                <input type="radio" name="q2" id="2a" value="5">
+                <label for="2b">4</label>
+                <input type="radio" name="q2" id="2b" value="4"> 
+                <label for="2c">3</label>
+                <input type="radio" name="q2" id="2c" value="3">
+                <label for="2d">2</label>
+                <input type="radio" name="q2" id="2d" value="2">
+                <label for="2e">1</label>
+                <input type="radio" name="q2" id="2e" value="1">
+            </fieldset>
+            </div>
+            <div data-demo-html="true">
+          <fieldset data-role="controlgroup" data-type="horizontal" data-inline="true">
+                <legend>Leadership 领导：</legend>
+                <label for="3a">5</label>
+                <input type="radio" name="q3" id="3a" value="5">
+                <label for="3b">4</label>
+                <input type="radio" name="q3" id="3b" value="4"> 
+                <label for="3c">3</label>
+                <input type="radio" name="q3" id="3c" value="3">
+                <label for="3d">2</label>
+                <input type="radio" name="q3" id="3d" value="2">
+                <label for="3e">1</label>
+                <input type="radio" name="q3" id="3e" value="1">
+            </fieldset>
+            </div>
+            <div data-demo-html="true">
+          <fieldset data-role="controlgroup" data-type="horizontal" data-inline="true">
+                <legend>Teamwork 协作：</legend>
+                <label for="4a">5</label>
+                <input type="radio" name="q4" id="4a" value="5">
+                <label for="4b">4</label>
+                <input type="radio" name="q4" id="4b" value="4"> 
+                <label for="4c">3</label>
+                <input type="radio" name="q4" id="4c" value="3">
+                <label for="4d">2</label>
+                <input type="radio" name="q4" id="4d" value="2">
+                <label for="4e">1</label>
+                <input type="radio" name="q4" id="4e" value="1">
+            </fieldset>
+            </div>  
+            <div data-demo-html="true">
+          <fieldset data-role="controlgroup" data-type="horizontal" data-inline="true">
+                <legend>Creative 创新：</legend>
+                <label for="5a">5</label>
+                <input type="radio" name="q5" id="5a" value="5">
+                <label for="5b">4</label>
+                <input type="radio" name="q5" id="5b" value="4"> 
+                <label for="5c">3</label>
+                <input type="radio" name="q5" id="5c" value="3">
+                <label for="5d">2</label>
+                <input type="radio" name="q5" id="5d" value="2">
+                <label for="5e">1</label>
+                <input type="radio" name="q5" id="5e" value="1">
+            </fieldset>
+            </div>
+                
+            <div data-demo-html="true">
+              <fieldset class="ui-grid-a">
+                <div class="ui-block-a">
+                  <input type="submit" value="提交" data-theme="a">
+                </div>
+                <div class="ui-block-b">
+                  <input type="reset" value="重置" data-theme="b">
+                </div>
+              </fieldset>
+            </div>
+          </form>     
+      </div>
+    <div data-role="footer"><h4>footer</h4></div>
+  </div>
+</body>
+</html>

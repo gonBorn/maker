@@ -1,0 +1,45 @@
+.course-info {
+	display: flex;
+}
+.descInfo {
+	margin:2px 10px;
+}
+.period {
+	margin-bottom:3px;
+}
+.desc >span{
+	font-size: 10px;
+}
+.desc >p {
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp: 3;
+	text-overflow: ellipsis;
+	line-height:15px;
+	overflow: hidden;
+	font-size: 10px;
+	color: #93999F;
+}
+.info {
+	width: 90%;
+}
+.type-period-num {
+	display: flex;
+	font-size: 10px;
+	margin: 5px 0;
+}
+.item {
+	color: #04A9D0;
+}
+.tip {
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	color: #1e89e0;
+
+	text-align:center;
+
+	box-shadow: 2px 2px 1px #E8E8E8;
+	background-color: #fff;
+	margin: 5px 10px 8px 10px;
+}

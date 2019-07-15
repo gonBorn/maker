@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/iconfont.css">
+	<script src="../../script/jquery-3.4.1.min.js"></script>
+	<script src="../../script/echarts.js"></script>
+	<script src="../../script/iconfont.js"></script>
+	<script src="../../script/checkEva.js"></script>
+	<title>checkEva</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.icon {
+		  	width: 1em;
+		  	height: 1em;
+		  	vertical-align: -0.15em;
+		  	fill: currentColor;
+		 	overflow: hidden;
+		 	position: relative;
+		 	top: 20px;
+		 	left: 20px;
+		 	z-index: 999;
+		 	color: white;
+		}
+		.header{
+			background-color: #1e89e0;
+			height: 60px;
+			position: fixed;
+			color: white;
+			width: 100%;
+			top: 0;
+/*			z-index: 999;*/
+		}
+		.title{
+			width: 80px;
+			font-size: 20px;
+			margin:0 auto;
+			line-height: 60px;
+		}
+		.login{
+			float: right;
+			margin:10px 10px;
+			color:white;
+			font-size: 12px;
+		}
+		.login>div{
+			float: right;
+			margin-left: 5px;
+		}
+		.other{
+			height:50px;
+		}
+		.content{
+			margin:10px 10px;
+		}
+		.cur{
+			height:60px;
+			line-height: 60px;
+			font-size:18px;
+		}
+		#teacher{
+			margin-top: 10px;
+			height: 400px;
+			margin:0 auto;
+		}
+		table {
+			position: relative;
+			top: 400px;
+		}
+		table.dataintable {
+		 	margin-top:15px;
+		  	border-collapse:collapse;
+		  	border:1px solid #aaa;
+		  	width:100%;
+		}
+		table.dataintable th {
+		 	vertical-align:baseline;
+		  	padding:5px 15px 5px 6px;
+		  	background-color:#3F3F3F;
+		  	border:1px solid #3F3F3F;
+		  	text-align:left;
+		  	color:#fff;
+		}
+		table.dataintable th:first-of-type {
+			width: 75px;
+		}
+		table.dataintable td {
+		  	vertical-align:text-top;
+		  	padding:6px 15px 6px 6px;
+		  	border:1px solid #aaa;
+		}
+		table.dataintable tr:nth-child(odd) {
+		  	background-color:#F5F5F5;
+		}
+		table.dataintable tr:nth-child(even) {
+		  	background-color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<svg class="icon" aria-hidden="true">
+		<use xlink:href="#icon-fanhui"></use>
+	</svg>
+	<div class="header">
+		<div class="title">查看评价</div>
+	</div>
+	<div class="other"></div>
+
+	<div class="content">
+		<div class="cur">正在查看：
+			<div class="courseDetail">动力机械</div>
+		<div id="teacher"></div>
+	</div>
+	<table class="dataintable">
+			<tr>
+			  	<th>评价时间</th>
+			  	<th>动手</th>
+			  	<th>积极</th>
+			  	<th>协助</th>
+			  	<th>创新</th>
+			  	<th>领导</th>
+			</tr>
+			<tr>
+			  	<td>2019-1-1</td>
+			  	<td>5</td>
+			  	<td>4</td>
+			  	<td>2</td>
+			  	<td>5</td>
+			  	<td>2</td>
+			</tr>
+		</table>
+	<script>
+		var teacherChart = echarts.init(document.getElementById('teacher'));
+		var option = {
+		    title: {
+		        text: '教师评价雷达图',
+		        left:'center',
+				// textStyle: {
+				// 	fontSize:14
+				// }
+
+		    },
+		    legend: {
+		        data: ['我的水准', '平均水准'],
+		        right:'right'
+		    },
+		    radar: {
+		        // shape: 'circle',
+		        name: {
+		            textStyle: {
+		                color: '#fff',
+		                backgroundColor: '#999',
+		                borderRadius: 3,
+		                padding: [3, 5]
+		           }
+		        },
+		        indicator: [
+		           { name: '创新', max: 4},
+		           { name: '积极', max: 4},
+		           { name: '动手', max: 4},
+		           { name: '协作', max: 4},
+		           { name: '领导', max: 4},
+		        ]
+		    },
+		    series: [{
+		        name: '我的水准 vs 平均水准',
+		        type: 'radar',
+		        // areaStyle: {normal: {}},
+		        data : [
+		            {
+		                value : [4,3,3,3,1],
+		                name : '我的水准'
+		            },
+		             {
+		                value : [4,4,3,2,2],
+		                name : '平均水准'
+		            }
+		        ]
+		    }]
+		};
+		teacherChart.setOption(option);
+	</script>
+</body>
+</html>

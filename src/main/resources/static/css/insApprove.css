@@ -1,0 +1,130 @@
+.header{
+	background-color: #1e89e0;
+	height: 60px;
+	position: fixed;
+	color: white;
+	width: 100%;
+	top: 0;
+}
+.title{
+	width: 80px;
+	font-size: 20px;
+	margin:0 auto;
+	line-height: 60px;
+}
+
+.content {
+	margin: 0 10px 0 10px;
+	position: relative;
+	top: 70px;
+	font-size: 13px;
+}
+
+li {
+	box-shadow: 2px 2px 1px #E8E8E8;
+	display: flex;
+	background-color: #FCFCFC;
+	margin-bottom: 7px;
+}
+.school-time {
+	margin-top: 15px;
+	flex: 1;
+	margin-left: 20px;
+}
+.schoolName {
+	margin: 2px 0 8px 0;
+	height: 16px;
+	font-size: 16px;
+	color: #1e89e0;
+}
+.courseName {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+/*.line {
+	width:90%;
+	height: 0px;
+	border: 1px solid #93999F;
+}*/
+.create {
+	margin-bottom: 8px;
+	line-height: 10px;
+	font-size: 10px;
+	color: #93999F;
+}
+.time-border {
+	margin-top: 15px;
+	flex: 2;
+	text-align: center;
+}
+.border {
+	margin-bottom: 5px;
+}
+.app-status {
+	flex: 1;
+	font-size: 20px;
+	color: #FF5B65;
+	margin-top: 30px;
+}
+.row {
+	padding: 10px;
+	margin: 0 20px;
+	display: flex;
+}
+
+.row input {
+	height: 40px;
+	flex: 1;
+}
+#time {
+	position: relative;
+	top: 80px;
+}
+#teacher {
+	position: relative;
+	top: 80px;
+}
+#address {
+	position: relative;
+	top: 90px;
+}
+.row>span {
+	font-size: 13px;
+	line-height: 40px;
+}
+input {
+	padding: 16px 12px;
+	border:1px solid #d5d5d5;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.footer{
+	height: 50px;
+	position: fixed;
+	border-top:1px solid #E9E9E9;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	background-color: white;
+}
+
+.footer-btn{
+	flex:1;
+	text-align: center;
+	line-height: 50px;
+	border-right: 1px solid #E6E6E6;
+}
+.attention {
+	font-size: 10px;
+	color: red;
+	position: relative;
+	top: 10px;
+	left: 12px;
+}
+select {
+	height: 40px;
+	flex:1;
+	border:1px solid #d5d5d5;
+	border-radius: 3px;
+	font-size: 14px;
+}
